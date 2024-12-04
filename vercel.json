@@ -1,19 +1,10 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "build"
-        }
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/api/:path*",
-        "destination": "https://api.eshopuca.me/:path*"
-      }
-    ]
-  }
-  
+  "builds": [
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/static-build",
+      "config": {}
+    }
+  ],
+  "outputDirectory": "dist"
+}
