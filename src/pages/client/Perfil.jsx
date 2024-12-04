@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPen, faLock } from '@fortawesome/free-solid-svg-icons';
-import '../../assets/styles/pedidos.scss';
+import '../../assets/styles/Pedidos.scss';
 import Pedidos from './pedidos';
 import { useNavigate } from 'react-router-dom';
 import { getProfile, updateProfile } from '../../services/client/profileService';
