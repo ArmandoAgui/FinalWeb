@@ -2,14 +2,14 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins: [react()],  // Solo el plugin de React ahora
+  plugins: [react()],
   build: {
-    outDir: 'dist', // Asegura que los archivos se generen en la carpeta 'dist' para el deploy
-    assetsDir: 'assets', // Directorio para los archivos estáticos generados
-    sourcemap: false, // Opcional: puedes desactivar los mapas de fuente en producción si no los necesitas
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
   },
   server: {
-    port: 3000, // Puerto en el que se ejecutará el servidor de desarrollo
+    port: 3000,
   },
-  base: './', // Asegura que las rutas relativas funcionen correctamente, especialmente si usas React Router
+  base: './',
 });
