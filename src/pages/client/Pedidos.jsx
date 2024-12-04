@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { getUserOrders } from '../../services/client/orderService';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faScroll } from '@fortawesome/free-solid-svg-icons';
-import '../../assets/styles/perfil.scss';
+import '../../assets/styles/Perfil.scss';
 
 const Pedidos = () => {
     const [orders, setOrders] = useState([]);
